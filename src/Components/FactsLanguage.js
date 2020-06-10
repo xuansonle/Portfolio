@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { FormattedHTMLMessage } from "react-intl";
 
-const languagedata = [
+const language_data = [
   {
     item: "vn",
     level: 100,
@@ -20,12 +20,12 @@ const languagedata = [
 const Language = (props) => {
   return (
     <div className="col-sm-4">
-      <p className="factslanguage-name">
-        <FormattedHTMLMessage id={"factslanguage." + props.values.item} />
+      <p className="fact-language-name">
+        <FormattedHTMLMessage id={"fact-language." + props.values.item} />
       </p>
-      <p className="factslanguage-info">
+      <p className="fact-language-info">
         <FormattedHTMLMessage
-          id={"factslanguage." + props.values.item + ".info"}
+          id={"fact-language." + props.values.item + ".info"}
         />
       </p>
     </div>
@@ -37,10 +37,10 @@ export default class FactsLanguage extends Component {
     return (
       <>
         <h4 className="facts-intro">
-          <FormattedHTMLMessage id="factslanguage.intro" />{" "}
+          <FormattedHTMLMessage id="fact-language.intro" />{" "}
         </h4>
         <div className="facts-language row justify-content-center">
-          {languagedata.map((language) => {
+          {language_data.map((language) => {
             return <Language values={language} key={language.item} />;
           })}
         </div>

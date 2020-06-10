@@ -8,11 +8,18 @@ export default class Footer extends Component {
     return (
       <div className="copyright">
         <div id="icons-div">
-          <a className="myiconslink" href="https://github.com/lexuanson">
+          <a
+            className="myiconslink"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/xuansonle"
+          >
             <img className="myicons" src={github} alt="git" />
           </a>
           <a
             className="myiconslink"
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/xuansonle"
           >
             <img className="myicons" src={linkedin} alt="linkedin" />

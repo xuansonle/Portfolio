@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 body {
   font-family: "Open Sans", serif !important;
@@ -53,29 +53,29 @@ body {
 .navbar-toggler {
   padding: 0 !important;
   width: 40pt;
-  border: None !important
+  border: None !important;
 }
 
 .navLink {
-  color: #e0d8c3;
+  color: #ffffff;
   margin-right: 20pt;
 }
 
 .navLink:hover {
-  text-decoration: underline ;
-  text-underline-position: under ;
-  color: #e0d8c3 ;
+  text-decoration: underline;
+  text-underline-position: under;
   background-color: transparent;
+  color: #ffffff;
 }
 
 .dropdown-menu {
-  padding: 0 ;
-  margin-top: 8px ;
-  background-color: #272324 ;
+  padding: 0;
+  margin-top: 8px;
+  background-color: #272324;
 }
 
 .dropdown-item {
-  color: #e0d8c3 ;
+  color: #e0d8c3;
   margin: 3px 0 0 0 !important;
 }
 
@@ -83,7 +83,6 @@ body {
   text-decoration: underline;
   font-weight: 300 !important;
   text-underline-position: under !important;
-  color: #e0d8c3 !important;
 }
 
 @media (max-width: 767.98px) {
@@ -223,18 +222,10 @@ body {
   }
 }
 
-.fade-in {
-  opacity: 0; /* make things invisible upon start */
-  animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  animation-duration: 1.5s;
-  animation-delay: 0s;
-}
-
 #home-div {
   /* background-image: url("../Images/Background/sky.jpg"); */
   text-align: center;
-  animation: 2s ease-out 0s 1 fadeIn;
+  animation: 0.5s ease-out 0s 1 fadeIn;
   min-height: calc(100vh - 50pt) !important;
 }
 
@@ -247,7 +238,6 @@ body {
   min-height: calc(70vh - 50pt);
   padding-bottom: 20pt;
   margin-bottom: 20pt;
-
 }
 
 .hi-text {
@@ -376,9 +366,9 @@ br {
 
 @media (max-width: 991px) {
   #work-div {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 
 .download-div {
@@ -387,7 +377,7 @@ br {
 }
 
 .download-button {
-  background-color: #343A40;
+  background-color: #343a40;
   color: #e0d8c3;
   cursor: pointer;
   font-weight: bold;
@@ -397,7 +387,7 @@ br {
 
 .download-button:hover {
   background-color: #e0d8c3;
-  color: #343A40;
+  color: #343a40;
 }
 
 /*
@@ -464,7 +454,6 @@ br {
   padding-top: 10pt;
 }
 
-
 @media (min-width: 991px) and (max-width: 1108px) {
   .project-div {
     min-height: 42em;
@@ -501,19 +490,19 @@ br {
   height: 320px;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .project-video {
     width: 80% !important;
   }
 }
 
-@media (min-width:991px) and (max-width:1280px) {
+@media (min-width: 991px) and (max-width: 1280px) {
   .project-video {
     width: 80% !important;
   }
 }
 
-@media (min-width:1281px) {
+@media (min-width: 1281px) {
   .project-video {
     width: 65% !important;
   }

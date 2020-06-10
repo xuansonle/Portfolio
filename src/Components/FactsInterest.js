@@ -10,7 +10,7 @@ import reading from "../Images/Interest/reading.png";
 import keyboard from "../Images/Interest/keyboard.png";
 import football from "../Images/Interest/football.png";
 
-const interestdata = [
+const interest_data = [
   {
     icon: "icon1",
     img: learning
@@ -44,18 +44,18 @@ const Interest = props => {
         <div className="flip-card-front">
           <img
             src={props.values.img}
-            className="factsinterest-icon"
+            className="fact-interest-icon"
             alt="interest-icon"
           />
           <p>
             <FormattedHTMLMessage
-              id={"factsinterest.front." + props.values.icon}
+              id={"fact-interest.front." + props.values.icon}
             />
           </p>
         </div>
         <div className="flip-card-back">
           <FormattedHTMLMessage
-            id={"factsinterest.back." + props.values.icon}
+            id={"fact-interest.back." + props.values.icon}
           />
         </div>
       </div>
@@ -68,10 +68,10 @@ export default class FactsInterest extends Component {
     return (
       <>
         <h4 className="facts-intro">
-          <FormattedHTMLMessage id="factsinterest.intro" />{" "}
+          <FormattedHTMLMessage id="fact-interest.intro" />{" "}
         </h4>
         <div className="row mb-3">
-          {interestdata.map(interest => {
+          {interest_data.map(interest => {
             return <Interest values={interest} key={interest.icon} />;
           })}
         </div>

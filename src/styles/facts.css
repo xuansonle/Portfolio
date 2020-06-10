@@ -7,7 +7,7 @@
 */
 
 .facts-content {
-  animation: 1.5s ease-out 0s 1 fadeIn;
+  animation: 0.5s ease-out 0s 1 fadeIn;
 }
 
 
@@ -55,15 +55,10 @@
   color: #eb613d !important;
 }
 
-.rsm-svg {
-  background-color: transparent;
-  margin-top: 30pt;
-  padding: 0 !important;
-}
-
 @media (max-width: 768px) {
   .rsm-svg {
-    height: 450px !important;
+    height: 600px !important;
+    margin-top: 20pt;
   }
 }
 
@@ -89,11 +84,7 @@
 }
 
 
-.factslanguage-info {
-  font-size: 10.5pt;
-}
-
-.factsinterest-icon {
+.fact-interest-icon {
   width: 70px;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -124,56 +115,15 @@
 ##############################################
 */
 
-.progress-title {
-  font-size: 16px;
-  color: #000;
-  margin: 0 10px 20px 0;
-  text-align: left;
-  padding-left: 15pt;
+.fact-language-name {
+  font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  .progress-title {
-    text-align: left;
-  }
+.fact-language-info {
+  font-size: 10.5pt;
+  margin-top: -14pt;
 }
 
-.progress {
-  height: 30px;
-  border-radius: 5px;
-  border: solid #343a40 2pt;
-  background: #dcdfe1;
-  margin: 10px 0 20px 20px;
-  overflow: hidden;
-  padding: 0 !important;
-  max-width: 90vw;
-}
-
-@media (max-width: 768px) {
-  .progress {
-    margin: 0px 0 20px 20px;
-  }
-  .progress-title {
-    margin: 0;
-  }
-}
-
-.progress .progress-bar {
-  height: 30px;
-  animation: animate-positive 2s;
-  background: #343a40;
-}
-
-@-webkit-keyframes animate-positive {
-  0% {
-    width: 0%;
-  }
-}
-@keyframes animate-positive {
-  0% {
-    width: 0%;
-  }
-}
 
 /*
 ##############################################
@@ -225,7 +175,7 @@
 
 /* Style the back side */
 .flip-card-back {
-  color: #dcdfe1;
+  color: #ffffff;
   background-color: #343a40;
   border-radius: 10px !important;
   transform: rotateY(180deg);

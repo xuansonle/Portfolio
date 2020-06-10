@@ -25,6 +25,7 @@ import nghean from "../Images/Travel/nghean.jpg";
 import oslo from "../Images/Travel/oslo.jpg";
 import paris from "../Images/Travel/paris.jpg";
 import stockholm from "../Images/Travel/stockholm.jpg";
+import venice from "../Images/Travel/venice.jpg";
 
 export default class FactsWorldMap extends Component {
   constructor(props) {
@@ -113,14 +114,13 @@ export default class FactsWorldMap extends Component {
                 </button>
               </li>
             ))}
-            {/* <button className="zoomButton" onClick={this.handleReset}>
-                {this.props.language === "de" ? "Reset" : "Reset"}
-              </button> */}
+            <button className="" onClick={this.handleReset}>
+              Reset
+            </button>
           </div>
 
           <div className="col-md-10 ">
             <Motion
-
               style={{
                 zoom: spring(this.state.zoom, {
                   stiffness: 210,
@@ -316,5 +316,10 @@ const cities = [
     name: "Stockholm",
     coordinates: [18.068581, 59.329324],
     img: stockholm,
+  },
+  {
+    name: "Venice",
+    coordinates: [45.438759, 12.327145],
+    img: venice,
   },
 ];

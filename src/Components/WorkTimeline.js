@@ -16,7 +16,7 @@ export default class WorkTimeline extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ loadingButton: true });
-    }, 2000);
+    }, 1600);
   }
 
   render() {
