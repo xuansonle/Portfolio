@@ -52,8 +52,9 @@ body {
 
 .navbar-toggler {
   padding: 0 !important;
-  width: 40pt;
+  width: 42pt;
   border: None !important;
+  background-color: transparent !important;
 }
 
 .navLink {
@@ -70,7 +71,6 @@ body {
 
 .dropdown-menu {
   padding: 0;
-  margin-top: 8px;
   background-color: #272324;
 }
 
@@ -92,7 +92,7 @@ body {
     z-index: 10;
     padding-bottom: 10pt;
     padding-right: 15pt;
-    /* margin: 10pt; */
+    margin: 3pt;
   }
   .navLink {
     font-size: calc(1vw + 1vh);
