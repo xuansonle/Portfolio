@@ -120,25 +120,7 @@ export default class FactsWorldMap extends Component {
 
           <div className="col-md-10 ">
             <Motion
-              defaultStyle={{
-                zoom: 1.26,
-                x: 0,
-                y: 45,
-              }}
-              style={{
-                zoom: spring(this.state.zoom, {
-                  stiffness: 210,
-                  damping: 50,
-                }),
-                x: spring(this.state.center[0], {
-                  stiffness: 210,
-                  damping: 50,
-                }),
-                y: spring(this.state.center[1], {
-                  stiffness: 210,
-                  damping: 50,
-                }),
-              }}
+
             >
               {({ zoom, x, y }) => (
                 <div>
