@@ -10,12 +10,7 @@
   animation: 1.5s ease-out 0s 1 fadeIn;
 }
 
-.facts-page {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .height-100-div {
   min-height: 100vh !important;
@@ -29,10 +24,6 @@
   font-weight: bold !important;
   padding-top: 20px;
   margin-bottom: 20px;
-}
-
-.facts-content-div {
-  width: 80vw !important;
 }
 
 .cityButtons {
