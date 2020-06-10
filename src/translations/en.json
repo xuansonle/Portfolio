@@ -1,0 +1,63 @@
+{
+  "menu.aboutme": "ABOUT ME",
+  "menu.work": "WORK",
+  "menu.skills": "PROJECTS",
+  "menu.facts": "FACTS",
+  "comment": "<span>Hi. My name is <span id='span-name'>Xuan Son Le</span>. <br/><br/> I am originally from Hanoi, Vietnam but have been living in Berlin, Germany since nearly a decade. <br/><br/> Let's </span> <a id='span-hello' href='mailto:lexuanson1992@gmail.com?subject=Hello Xuan Son'> say Hello</a> <span> or keep clicking to know more about me.</span>",
+
+  "projects.source": "SOURCE CODE",
+  "projects.logReg.title": "Logistic regression",
+  "projects.logReg.info": "Building logistic regression from scratch based on the maximum likelihood estimation and Newton–Raphson method",
+  "projects.thesis.title": "Multiclass classification",
+  "projects.thesis.info": "An application of multinomial logistic regression and support vector machine in predicting poverty classes in Mexico",
+  "projects.digit.title": "Digit Recognizer",
+  "projects.digit.info": "Building an app based on convolutional neural network which can recognize handwritten digits",
+  "projects.blog.title": "Blogging Website",
+  "projects.blog.info": "Building a full-featured web app for blogging where users can register, login, write and update their posts",
+  "projects.objectDetec.title": "Object Detector",
+  "projects.objectDetec.info": "Building a real-time object recognition via webcam with Tensorflow API and OpenCV",
+  "projects.motion.title": "OpenCV Application",
+  "projects.motion.info": "Implementing several OpenCV applications: face recognition, face detection, motion detection, document scanner",
+
+
+  "worktimeline.download": "Resume",
+  "worktimeline.workicon11": "Task automation with Python",
+  "worktimeline.workicon12": "ETL: Web scraping, API connection",
+  "worktimeline.workicon13": "Participating in end-to-end machine learning projects ",
+  "worktimeline.workicon21": "Task automation with Python",
+  "worktimeline.workicon22": "Ad-hoc analysis",
+  "worktimeline.workicon23": "Creating real-time updated dashboards",
+  "worktimeline.workicon31": "Report automation with R",
+  "worktimeline.workicon32": "Predictive modelling",
+  "worktimeline.workicon33": "ETL process management",
+  "worktimeline.workicon41": "ETL process management",
+  "worktimeline.workicon42": "Data quality management",
+  "worktimeline.workicon43": "Ad-hoc analysis",
+
+  "factsworldmap.intro": "I have been in . . .",
+
+  "factslanguage.intro": "I speak . . .", 
+  "factslanguage.intro2": "and . . .", 
+  "factslanguage.de": "GERMAN",
+  "factslanguage.de.info": "Goethe certificate C2",
+  "factslanguage.en": "ENGLISH",
+  "factslanguage.en.info": "IELTS 7.0",
+  "factslanguage.vn": "VIETNAMESE",
+  "factslanguage.vn.info": "Mother tongue",
+
+  "factsinterest.intro": "I like . . .",
+  "factsinterest.front.icon1": "Self-teaching",
+  "factsinterest.front.icon2": "Puzzle games",
+  "factsinterest.front.icon3": "Travelling",
+  "factsinterest.front.icon4": "Reading",
+  "factsinterest.front.icon5": "Music",
+  "factsinterest.front.icon6": "Football",
+  
+  "factsinterest.back.icon1": "Everything is learnable",
+  "factsinterest.back.icon2": "Personal record for Rubik's cube: 50s",
+  "factsinterest.back.icon3": "Someday I will travel all continents of the world",
+  "factsinterest.back.icon4": "John Green and Haruki Murakami",
+  "factsinterest.back.icon5": "Playing keyboard, enjoying indie and 2000s music",
+  "factsinterest.back.icon6": "Liverpool FC"
+  
+}

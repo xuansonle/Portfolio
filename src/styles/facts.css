@@ -1,0 +1,182 @@
+/*
+##############################################
+#                                            #           
+#             FACTS                          #   
+#                                            #   
+##############################################
+*/
+
+.facts-content {
+  animation: 1.5s ease-out 0s 1 fadeIn;
+}
+
+.facts-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.height-100-div {
+  min-height: 100vh !important;
+}
+
+
+
+.facts-intro {
+  text-align: left !important;
+  color: #e65540 !important;
+  font-weight: bold !important;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.facts-content-div {
+  width: 80vw !important;
+}
+
+
+.factslanguage-info {
+  font-size: 10.5pt;
+}
+
+.factsinterest-icon {
+  width: 70px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background-color: #dcdfe1;
+}
+
+#facts-hobby {
+  background-color: rgba(0, 166, 140, 0.8);
+}
+
+#rubik-img {
+  background-image: url("../Images/Others/rubik.jpg");
+  background-size: cover;
+  width: 260pt;
+  height: 160pt;
+}
+
+/*
+##############################################
+#                                            #           
+#             LANGUAGE                       #   
+#                                            #   
+##############################################
+*/
+
+.progress-title {
+  font-size: 16px;
+  color: #000;
+  margin: 0 10px 20px 0;
+  text-align: left;
+  padding-left: 15pt;
+}
+
+@media (max-width: 768px) {
+  .progress-title {
+    text-align: left;
+  }
+}
+
+.progress {
+  height: 30px;
+  border-radius: 5px;
+  border: solid #343a40 2pt;
+  background: #dcdfe1;
+  margin: 10px 0 20px 20px;
+  overflow: hidden;
+  padding: 0 !important;
+  max-width: 90vw;
+}
+
+@media (max-width: 768px) {
+  .progress {
+    margin: 0px 0 20px 20px;
+  }
+  .progress-title {
+    margin: 0;
+  }
+}
+
+.progress .progress-bar {
+  height: 30px;
+  animation: animate-positive 2s;
+  background: #343a40;
+}
+
+@-webkit-keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
+}
+
+/*
+##############################################
+#                                            #           
+#             INTEREST                       #   
+#                                            #   
+##############################################
+*/
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+  padding: 10px !important;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  height: 150px !important;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  color: #343a40;
+  font-weight: bold;
+  border: 2pt solid #343a40;
+  border-radius: 10pt;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #dcdfe1;
+  border-radius: 10px !important;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: #dcdfe1;
+  background-color: #343a40;
+  border-radius: 10px !important;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#bottom {
+  height: 150px;
+}
