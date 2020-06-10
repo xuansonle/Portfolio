@@ -5,7 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 
 // Import CSS
 import "./styles/mystyle.css";
-import "./styles/bootstrap4.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/timeline.css";
 import "./styles/facts.css";
 

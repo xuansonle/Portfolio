@@ -35,6 +35,68 @@
   width: 80vw !important;
 }
 
+.cityButtons {
+  text-align: right;
+  padding-right: 0 !important;
+  margin-bottom: 5pt;
+}
+
+.cityButton {
+  background-color: transparent !important;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+  .cityButtons {
+    text-align: center;
+  }
+  .cityButtonItem {
+    display: inline-block !important;
+  }
+}
+
+.cityButton:hover,
+.cityButton:focus,
+.cityButton:active {
+  color: #eb613d !important;
+}
+
+.rsm-svg {
+  background-color: transparent;
+  margin-top: 30pt;
+  padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .rsm-svg {
+    height: 450px !important;
+  }
+}
+
+.Geography {
+  fill: #dcdfe1;
+  stroke: #74747a;
+  stroke-width: 0.5;
+  outline: none;
+}
+
+.Geography:hover {
+  fill: #74747a;
+  stroke: #dcdfe1;
+  stroke-width: 0.75;
+  outline: none;
+}
+
+.Geography:active {
+  fill: #ff5722;
+  stroke: #dcdfe1;
+  stroke-width: 0.75;
+  outline: none;
+}
+
 
 .factslanguage-info {
   font-size: 10.5pt;
@@ -47,16 +109,22 @@
   background-color: #dcdfe1;
 }
 
-#facts-hobby {
-  background-color: rgba(0, 166, 140, 0.8);
+.tooltipDiv {
+  fill: rgba(224, 216, 195) !important;
 }
 
-#rubik-img {
-  background-image: url("../Images/Others/rubik.jpg");
-  background-size: cover;
-  width: 260pt;
-  height: 160pt;
+.tooltipText {
+  fill: #343a40 !important;
+  font-size: 18pt !important;
+  font-weight: bold !important;
 }
+
+@media (max-width: 768px) {
+  .mapToolTip {
+    display: none;
+  }
+}
+
 
 /*
 ##############################################

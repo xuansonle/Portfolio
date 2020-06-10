@@ -52,7 +52,8 @@ body {
 
 .navbar-toggler {
   padding: 0 !important;
-  width: 30pt;
+  width: 40pt;
+  border: None !important
 }
 
 .navLink {
@@ -89,10 +90,10 @@ body {
   .navbar-collapse {
     background-color: #343a40;
     text-align: right;
-    z-index: 1000;
+    z-index: 10;
     padding-bottom: 10pt;
     padding-right: 15pt;
-    margin: 10pt;
+    /* margin: 10pt; */
   }
   .navLink {
     font-size: calc(1vw + 1vh);
