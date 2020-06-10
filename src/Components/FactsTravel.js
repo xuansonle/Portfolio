@@ -95,7 +95,7 @@ export default class FactsWorldMap extends Component {
         <h4 className="facts-intro">
           <FormattedHTMLMessage id="factsworldmap.intro" />
         </h4>
-        <div className="row worldmap-row">
+        <div className="row">
           <div className="cityButtons col-md-2 list-unstyled">
             {cities.map((city, i) => (
               <li className="cityButtonItem" key={i}>
@@ -118,143 +118,7 @@ export default class FactsWorldMap extends Component {
               </button> */}
           </div>
 
-          <div className="col-md-10 ">
-            <Motion
-              defaultStyle={{
-                zoom: 1.26,
-                x: 0,
-                y: 45,
-              }}
-              style={{
-                zoom: spring(this.state.zoom, {
-                  stiffness: 210,
-                  damping: 50,
-                }),
-                x: spring(this.state.center[0], {
-                  stiffness: 210,
-                  damping: 50,
-                }),
-                y: spring(this.state.center[1], {
-                  stiffness: 210,
-                  damping: 50,
-                }),
-              }}
-            >
-              {({ zoom, x, y }) => (
-                <div className="map-div">
-                  <ComposableMap
-                    projectionConfig={{ scale: 205 }}
-                    width={980}
-                    height={551}
-                    style={{
-                      width: "90%",
-                      height: "auto",
-                    }}
-                  >
-                    <ZoomableGroup
-                      center={[x, y]}
-                      zoom={zoom}
-                      disablePanning={true}
-                    >
-                      <Geographies
-                        geography={
-                          this.props.language === "de" ? jsonFileDE : jsonFileEN
-                        }
-                        className="Geographies"
-                        disableOptimization={true}
-                      >
-                        {(geographies, projection) =>
-                          geographies.map(
-                            (geography, i) =>
-                              geography.id !== "010" && (
-                                <Geography
-                                  key={i}
-                                  geography={geography}
-                                  projection={projection}
-                                  className="Geography"
-                                  data-tip={geography.properties.name}
-                                  onClick={this.resetCityClick}
-                                  tabable={false}
-                                />
-                              )
-                          )
-                        }
-                      </Geographies>
-                      <Markers>
-                        {cities.map((city, i) => (
-                          <Marker
-                            key={i}
-                            marker={city}
-                            onClick={this.handleCityClick}
-                            style={{ cursor: "pointer" }}
-                          >
-                            <circle
-                              cx={0}
-                              cy={0}
-                              r={8}
-                              fill={
-                                city.name === this.state.clickCity
-                                  ? "#343a40"
-                                  : "#FF5722"
-                              }
-                              stroke={
-                                city.name === this.state.clickCity
-                                  ? "#343a40"
-                                  : "#DF3702"
-                              }
-                            />
-                            {city.name === this.state.clickCity ? (
-                              <svg
-                                height="800"
-                                width="800"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                              >
-                                {city.textDE !== undefined ? (
-                                  <rect
-                                    height="26"
-                                    width={
-                                      this.props.language === "de"
-                                        ? city.textDE.length * 14
-                                        : city.textEN.length * 14
-                                    }
-                                    x="10"
-                                    y="0"
-                                    rx="10"
-                                    className="tooltipDiv"
-                                    preserveAspectRatio="xMinYMin meet"
-                                  />
-                                ) : null}
-                                <text x="12" y="20" className="tooltipText">
-                                  {this.props.language === "de"
-                                    ? city.textDE
-                                    : city.textEN}
-                                </text>
-                                <image
-                                  xlinkHref={this.state.tooltipImg}
-                                  height={
-                                    window.innerWidth >= 768 ? "450" : "1000"
-                                  }
-                                  width={
-                                    window.innerWidth >= 768 ? "600" : "1000"
-                                  }
-                                  x="10"
-                                  y="30"
-                                  className="tooltipImage"
-                                  preserveAspectRatio="xMinYMin meet"
-                                />
-                              </svg>
-                            ) : null}
-                          </Marker>
-                        ))}
-                      </Markers>
-                    </ZoomableGroup>
-                  </ComposableMap>
-                  {/* <ReactTooltip className="mapToolTip" /> */}
-                </div>
-              )}
-            </Motion>
-          </div>
+          
         </div>
       </div>
     );
