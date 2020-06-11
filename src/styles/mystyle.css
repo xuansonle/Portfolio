@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 body {
-  font-family: "Open Sans", serif !important;
+  font-family: "Poppins", serif !important;
   /* font-family: 'Work Sans', sans-serif !important */
 }
 
@@ -18,8 +18,6 @@ body {
 #mynav {
   background-color: #343a40;
   margin: 0 auto;
-  height: 50pt;
-  width: 100vw;
   padding-right: 15vw;
   padding-left: 15vw;
 }
@@ -31,9 +29,8 @@ body {
   }
 }
 
-#logo {
-  width: 42pt;
-  height: 42pt;
+.navbar-brand {
+  font-size: x-large !important;
 }
 
 .chooseLanguageButtonDefault {
@@ -51,10 +48,12 @@ body {
 }
 
 .navbar-toggler {
-  padding: 0 !important;
-  width: 42pt;
+  padding: 5pt !important;
   border: None !important;
-  background-color: transparent !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .navLink {
@@ -70,35 +69,26 @@ body {
 }
 
 .dropdown-menu {
-  padding: 0;
   background-color: #272324;
-}
-
-.dropdown-item {
-  color: #e0d8c3;
-  margin: 3px 0 0 0 !important;
 }
 
 .navLinkActive {
   text-decoration: underline;
-  font-weight: 300 !important;
   text-underline-position: under !important;
 }
 
 @media (max-width: 767.98px) {
   .navbar-collapse {
-    background-color: #343a40;
+    /* background-color: #343a40; */
     text-align: right;
     z-index: 10;
     padding-bottom: 10pt;
-    padding-right: 15pt;
-    margin: 3pt;
+    padding-right: 10pt;
   }
   .navLink {
-    font-size: calc(1vw + 1vh);
     margin-top: 20pt;
-    margin-right: 0pt;
-    display: block !important;
+    margin-right: 0;
+    display: block;
   }
 }
 
@@ -223,7 +213,6 @@ body {
 }
 
 #home-div {
-  /* background-image: url("../Images/Background/sky.jpg"); */
   text-align: center;
   animation: 0.5s ease-out 0s 1 fadeIn;
   min-height: calc(100vh - 50pt) !important;
@@ -248,14 +237,8 @@ body {
 @media (min-width: 0px) and (max-width: 600px) {
   .hi-text {
     font-size: 10pt;
+    margin-top: 10pt;
   }
-}
-
-#avatar {
-  height: 80pt;
-  border-radius: 50%;
-  float: left;
-  margin: 10pt 40pt 0 0;
 }
 
 br {
@@ -295,7 +278,6 @@ br {
   width: 280pt !important;
   cursor: pointer;
   border-radius: 10px;
-  font-weight: bold;
   margin-bottom: 40pt;
 }
 
@@ -303,7 +285,6 @@ br {
   transition: all 0.1s ease-in-out;
   outline: 0px solid transparent;
   border: 5px solid #343a40;
-  font-weight: bold !important;
   color: #343a40 !important;
   text-decoration: none !important;
 }
@@ -314,13 +295,15 @@ br {
 }
 
 .menu-logo {
-  width: 60px;
+  width: 50px;
   height: auto;
   margin-bottom: 10pt;
 }
 
 .menu-text {
   position: relative;
+  font-weight: bolder;
+  font-size: large;
 }
 
 @media (min-width: 0px) and (max-width: 600px) {

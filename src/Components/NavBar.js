@@ -5,7 +5,6 @@ import ChooseLanguageButton from "../Components/ChooseLanguageButton";
 import NavBarItem from "../Components/NavBarItem";
 import en from "../Images/Others/en.png";
 import de from "../Images/Others/de.png";
-import togglerButton from "../Images/Others/nav.png";
 
 // Browser Language
 const defaultLanguage =
@@ -21,7 +20,7 @@ export default class NavBar extends Component {
       windowLanguage:
         localStorage.getItem("language") === null
           ? defaultLanguage
-          : localStorage.getItem("language")
+          : localStorage.getItem("language"),
     };
     this.changeWindowLanguage = this.changeWindowLanguage.bind(this);
   }
@@ -39,7 +38,6 @@ export default class NavBar extends Component {
         id="mynav"
         className="navbar navbar-expand-md navbar-dark bg-dark primary-color"
       >
-
         <a className="navbar-brand" href="/home">
           Xuan Son Le
         </a>
@@ -66,28 +64,26 @@ export default class NavBar extends Component {
 
         {(window.location.pathname === "/home") |
         (window.location.pathname === "/") ? null : (
-          <input
-            className="navbar-toggler"
-            type="image"
-            src={togglerButton}
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          />
-        )}
-
-        {(window.location.pathname === "/home") |
-        (window.location.pathname === "/") ? null : (
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav ml-auto">
-              <NavBarItem name="skills" />
-              <NavBarItem name="work" />
-              <NavBarItem name="aboutme" />
-              
-            </ul>
-          </div>
+          <>
+            <button
+              className="navbar-toggler custom-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul className="navbar-nav ml-auto">
+                <NavBarItem name="skills" />
+                <NavBarItem name="work" />
+                <NavBarItem name="aboutme" />
+              </ul>
+            </div>
+          </>
         )}
       </nav>
     );
